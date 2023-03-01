@@ -5,22 +5,32 @@ import java.util.Scanner;
 public class Ejercicio7 {
 
 	public static void main(String[] args) {
-		String frase;
 		
-		String inv;
+		//Declaramos variables
+		String frase; //Se guardará la frase
+		String inv; //Se guardará la frase inversa
 		
+		//Creamos el Scanner
 		Scanner read= new Scanner (System.in);
 		
+		//Pedimos dato
 		System.out.println("Introduzca una frase:");
+		//Leemos dato
 		frase=read.nextLine();	
 		
+		//Invertimos la frase y la guardamos en inv
 		inv = new StringBuilder (frase).reverse().toString();
 		
+		//Si la frase es igual a la inversa
 		if (frase.equals(inv)) {
+			//Se le mostrará como que es palíndroma
 			System.out.println("La frase es palíndroma");
+		//Por el contrario
 		}else {
+			//Se le mostrará que no es palíndroma
 			System.out.println("La frase no es palíndroma");
 		}
+		//Cerramos Scanner
 		read.close();
 	}
 
