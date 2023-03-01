@@ -6,7 +6,6 @@ public class Ejercicio5 {
 
 	public static void main(String[] args) {
 		
-		
 		String frase=""; //Se guardará la suma de cada palabra
 		String palabra; //Se guardará la palabra 
 
