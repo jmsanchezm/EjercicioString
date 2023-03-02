@@ -23,15 +23,13 @@ public class Ejercicio6 {
 		System.out.println("Introduzca una palabra:");
 		//Leemos la palabra
 		palabra= read.next();
-	
+		
+		//
+		posicion =frase.indexOf(palabra);
 		//Mientras que la posición sea distinta de -1
 		while (posicion!=-1) {
-			posicion =frase.indexOf(palabra, posicion+1);
-			//Si la posición es mayor o igual a 0
-			if (posicion>=0) {
-				//Se sumará uno.
-				cont++;
-			}
+			cont++;
+			posicion =frase.indexOf(palabra, posicion+palabra.length());
 		}
 		//Le mostrará en pantalla el número de veces que aparece la palabra
 		System.out.println("La palabra aparece " + cont + " veces");
