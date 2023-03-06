@@ -8,9 +8,7 @@ public class Ejercicio7 {
 		
 		//Declaramos variables
 		String frase; //Se guardará la frase
-		String inv; //Se guardará la frase inversa
-		
-		int cont=0;
+		String inv=""; //Se guardará la frase inversa
 		
 		//Creamos el Scanner
 		Scanner read= new Scanner (System.in);
@@ -20,13 +18,14 @@ public class Ejercicio7 {
 		//Leemos dato
 		frase=read.nextLine();	
 		frase=frase.replaceAll(" ", "");
-		inv=frase;
-		
-		
 
-		for (int i= inv.length();i>=0;i--) {
-			if
-		
+		//Recorremos al contrario la frase
+		for (int i= frase.length()-1;i>=0;i--) {
+			//Si el contenido de la posición i es distinto de un espacio
+			if (frase.charAt(i) != ' ') {
+				//Lo sumamos a inv
+				inv+=frase.charAt(i);
+			}
 		}
 		
 		//Si la frase es igual a la inversa
