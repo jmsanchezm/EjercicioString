@@ -8,11 +8,12 @@ public class Ejercicio10 {
 		char result=c;//Se guardará el carácter
 		
 		//Recorremos el conjunto1
-		for (int i =0; i<conjunto1.length;i++) {
+		for (int i =0; i<conjunto2.length;i++) {
 			//Si el contenido de la posición i es igual a result
-			if (conjunto2[i]==result) {
+			if (conjunto1[i]==result) {
 				//Se cambiará por el de la misma posición del conjunto2
-				result	=conjunto1[i];
+				result	=conjunto2[i];
+				break;
 			}
 		}
 		//Devolvemos el resultado
@@ -21,8 +22,8 @@ public class Ejercicio10 {
 
 	public static void main(String[] args) {
 		//Declaramos y damos valores a los arrays
-		char [] conjunto1= {'e','i','k','m','p','q','r','s','t','u','v'};
-		char [] conjunto2= {'p','v','i','u','m','t','e','r','k','q','s'};
+		char [] conjunto2= {'e','i','k','m','p','q','r','s','t','u','v'};
+		char [] conjunto1= {'p','v','i','u','m','t','e','r','k','q','s'};
 				
 		//Palabra a codificar
 		String palabra;
