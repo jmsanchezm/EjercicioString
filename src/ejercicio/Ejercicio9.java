@@ -20,6 +20,8 @@ public class Ejercicio9 {
 			if (conjunto1[i]==result) {
 				//Se cambiará por el de la misma posición del conjunto2
 				result	=conjunto2[i];
+				
+				break;
 			}
 		}
 		//Devolvemos el resultado
@@ -46,7 +48,7 @@ public class Ejercicio9 {
 		//Leemos la palabra
 		palabra = read.next();
 		//Convertimos la palabra a minúsculas
-		palabra.toLowerCase();
+		palabra=palabra.toLowerCase();
 	
 		//Recorremos la palabra
 		for (int i =0; i<palabra.length();i++) {
