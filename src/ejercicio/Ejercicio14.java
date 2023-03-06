@@ -12,7 +12,7 @@ public class Ejercicio14 {
 		
 		Scanner read= new Scanner (System.in);
 		
-		System.out.println("Jugador 1. Introduzca una palabra");
+		System.out.println("Jugador 1. Introduzca una palabra/frase");
 		palabraJ1= read.nextLine();
 		
 		palabra=palabraJ1.toCharArray();
@@ -20,8 +20,14 @@ public class Ejercicio14 {
 		for (int i =0; i < palabra.length;i++) {
 			posAleatoria = (int)(Math.random()*palabra.length);
 			System.out.print(palabra[posAleatoria]);
-			
 		}
+		
+		System.out.println("Jugador 2. Intente adivinar la palabra/frase");
+		do {
+			palabraJ2=read.nextLine();
+			
+			
+		}while(!palabraJ1.equals(palabraJ2));
 
 	}
 
