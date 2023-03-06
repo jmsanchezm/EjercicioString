@@ -10,6 +10,8 @@ public class Ejercicio7 {
 		String frase; //Se guardará la frase
 		String inv; //Se guardará la frase inversa
 		
+		int cont=0;
+		
 		//Creamos el Scanner
 		Scanner read= new Scanner (System.in);
 		
@@ -17,9 +19,15 @@ public class Ejercicio7 {
 		System.out.println("Introduzca una frase:");
 		//Leemos dato
 		frase=read.nextLine();	
+		frase=frase.replaceAll(" ", "");
+		inv=frase;
 		
-		//Invertimos la frase y la guardamos en inv
-		inv = new StringBuilder (frase).reverse().toString();
+		
+
+		for (int i= inv.length();i>=0;i--) {
+			if
+		
+		}
 		
 		//Si la frase es igual a la inversa
 		if (frase.equals(inv)) {
